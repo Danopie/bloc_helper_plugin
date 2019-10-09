@@ -1,0 +1,12 @@
+import 'package:pc3/utils/bloc/bloc.dart';
+import 'package:pc3/${path}/${bloc_snake_case}_model.dart';
+
+class ${bloc_pascal_case}Bloc extends Bloc<${bloc_pascal_case}Model> {
+  @override
+  void init() {
+    //TODO load data
+  }
+
+  @override
+  ${bloc_pascal_case}Model get initialModel => ${bloc_pascal_case}Model();
+}
