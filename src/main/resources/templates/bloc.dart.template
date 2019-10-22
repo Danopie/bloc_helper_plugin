@@ -1,4 +1,4 @@
-import 'package:pc3/utils/bloc/bloc.dart';
+import 'package:lightweight_bloc/lightweight_bloc.dart';
 import 'package:pc3/${path}/${bloc_snake_case}_model.dart';
 
 class ${bloc_pascal_case}Bloc extends Bloc<${bloc_pascal_case}Model> {

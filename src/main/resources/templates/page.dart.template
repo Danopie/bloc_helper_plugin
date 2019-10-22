@@ -1,7 +1,6 @@
-import 'package:base_utils/bloc/bloc_providers.dart';
 import 'package:base_utils/router/router.dart';
 import 'package:flutter/material.dart';
-import 'package:pc3/utils/bloc/bloc.dart';
+import 'package:lightweight_bloc/lightweight_bloc.dart';
 import 'package:pc3/${path}/${bloc_snake_case}_model.dart';
 import 'package:pc3/${path}/${bloc_snake_case}_bloc.dart';
 
