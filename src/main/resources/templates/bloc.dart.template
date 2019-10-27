@@ -1,12 +1,12 @@
 import 'package:lightweight_bloc/lightweight_bloc.dart';
-import 'package:pc3/${path}/${bloc_snake_case}_model.dart';
+import 'package:pc3/${path}/${bloc_snake_case}_state.dart';
 
-class ${bloc_pascal_case}Bloc extends Bloc<${bloc_pascal_case}Model> {
+class ${bloc_pascal_case}Bloc extends Bloc<${bloc_pascal_case}State> {
   @override
   void init() {
     //TODO load data
   }
 
   @override
-  ${bloc_pascal_case}Model get initialModel => ${bloc_pascal_case}Model();
+  ${bloc_pascal_case}State get initialState => ${bloc_pascal_case}State();
 }

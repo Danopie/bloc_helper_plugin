@@ -4,7 +4,7 @@
     <vendor email="danl@sendo.vn" url="https://www.sendo.vn">Sendo</vendor>
 
     <description><![CDATA[
-    Create bloc-page-model for a business component.
+    Create bloc-page-state for a business component.
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -23,7 +23,7 @@
     <actions>
         <group id="BlocHelper" text="Bloc" description="Helper for PC3 Bloc architecture">
             <add-to-group group-id="ToolsMenu" anchor="last"/>
-            <action id="BlocHelper.Create" class="com.danopie.CreateBlocAction" text="Create" description="Create Bloc-Page-Model for a business component"/>
+            <action id="BlocHelper.Create" class="com.danopie.CreateBlocAction" text="Create" description="Create Bloc-Page-State for a business component"/>
         </group>
     </actions>
 </idea-plugin>

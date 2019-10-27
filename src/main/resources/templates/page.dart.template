@@ -1,7 +1,7 @@
 import 'package:base_utils/router/router.dart';
 import 'package:flutter/material.dart';
 import 'package:lightweight_bloc/lightweight_bloc.dart';
-import 'package:pc3/${path}/${bloc_snake_case}_model.dart';
+import 'package:pc3/${path}/${bloc_snake_case}_state.dart';
 import 'package:pc3/${path}/${bloc_snake_case}_bloc.dart';
 
 class ${bloc_pascal_case}Page extends StatefulWidget {
@@ -41,14 +41,14 @@ class _${bloc_pascal_case}PageState extends State<${bloc_pascal_case}Page> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<${bloc_pascal_case}Bloc, ${bloc_pascal_case}Model>(
+    return BlocListener<${bloc_pascal_case}Bloc, ${bloc_pascal_case}State>(
       bloc: _bloc,
-      listener: (context, bloc, model) {
+      listener: (context, bloc, state) {
         //TODO show dialog, navigate to new screen,... here
       },
-      child: BlocWidgetBuilder<${bloc_pascal_case}Bloc, ${bloc_pascal_case}Model>(
+      child: BlocWidgetBuilder<${bloc_pascal_case}Bloc, ${bloc_pascal_case}State>(
           bloc: _bloc,
-          builder: (context, bloc, model) {
+          builder: (context, bloc, state) {
             //TODO build widget here
 
             return Container();

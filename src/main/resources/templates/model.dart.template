@@ -1,4 +1,4 @@
 
-class ${bloc_pascal_case}Model {
+class ${bloc_pascal_case}State {
 
 }
