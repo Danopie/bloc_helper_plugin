@@ -4,50 +4,30 @@ import 'package:lightweight_bloc/lightweight_bloc.dart';
 import 'package:pc3/${path}/${bloc_snake_case}_state.dart';
 import 'package:pc3/${path}/${bloc_snake_case}_bloc.dart';
 
-class ${bloc_pascal_case}Page extends StatefulWidget {
+class ${bloc_pascal_case}Screen extends StatefulWidget {
   static Widget newInstance() => BlocProvider<${bloc_pascal_case}Bloc>(
-        builder: () => ${bloc_pascal_case}Bloc(),
-        child: ${bloc_pascal_case}Page(),s
+        builder: (context) => ${bloc_pascal_case}Bloc(),
+        child: ${bloc_pascal_case}Screen(),
       );
 
   static Future<dynamic> show({BuildContext context}) {
     return Navigator.of(context)
-        .push(SendoPageRoute(builder: (context) => ${bloc_pascal_case}Page.newInstance()));
+        .push(SendoPageRoute(builder: (context) => ${bloc_pascal_case}Screen.newInstance()));
   }
 
   @override
-  _${bloc_pascal_case}PageState createState() => _${bloc_pascal_case}PageState();
+  _${bloc_pascal_case}ScreenState createState() => _${bloc_pascal_case}ScreenState();
 }
 
-class _${bloc_pascal_case}PageState extends State<${bloc_pascal_case}Page> {
-  ${bloc_pascal_case}Bloc _bloc;
-
-  @override
-  void initState() {
-    initBloc();
-    super.initState();
-  }
-
-  void initBloc() {
-    _bloc = BlocProvider.of<${bloc_pascal_case}Bloc>(context);
-    _bloc.init();
-  }
-
-  @override
-  void dispose() {
-    //TODO dispose
-    super.dispose();
-  }
+class _${bloc_pascal_case}ScreenState extends State<${bloc_pascal_case}Screen> {
 
   @override
   Widget build(BuildContext context) {
     return BlocListener<${bloc_pascal_case}Bloc, ${bloc_pascal_case}State>(
-      bloc: _bloc,
       listener: (context, bloc, state) {
         //TODO show dialog, navigate to new screen,... here
       },
       child: BlocWidgetBuilder<${bloc_pascal_case}Bloc, ${bloc_pascal_case}State>(
-          bloc: _bloc,
           builder: (context, bloc, state) {
             //TODO build widget here
 
@@ -55,4 +35,10 @@ class _${bloc_pascal_case}PageState extends State<${bloc_pascal_case}Page> {
           }),
     );
   }
+
+  @override
+    void dispose() {
+      //TODO dispose
+      super.dispose();
+    }
 }

@@ -6,7 +6,7 @@ import com.danopie.generator.base.Generator
 class BlocPageGenerator(
     blocName: String,
     blocShouldUseEquatable: Boolean
-) : Generator(blocName, blocShouldUseEquatable, templateName = "page") {
+) : Generator(blocName, blocShouldUseEquatable, templateName = "screen") {
 
-    override fun fileName() = "${snakeCase()}_page.${fileExtension()}"
+    override fun fileName() = "${snakeCase()}_screen.${fileExtension()}"
 }

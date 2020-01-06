@@ -4,7 +4,7 @@
     <vendor email="danl@sendo.vn" url="https://www.sendo.vn">Sendo</vendor>
 
     <description><![CDATA[
-    Create bloc-page-state for a business component.
+    Create bloc-screen-state for a business component.
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

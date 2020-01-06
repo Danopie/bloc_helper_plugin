@@ -74,7 +74,12 @@ class CreateBlocAction: AnAction("Create Bloc"), Listener {
         } while (d != null)
 
         val libIndex = path.indexOf("lib")
-        return path.subList(0, libIndex).reversed().joinToString("/")
+        if(libIndex >= 0){
+            return path.subList(0, libIndex).reversed().joinToString("/")
+        } else {
+            return "";
+        }
+
 
     }
 
